@@ -19,6 +19,10 @@ app.get('/data', function(req, res){
    res.json(jsonDATA);
 })
 
+var port = 3000;
 
-app.listen(3000);
+app.listen(port, function(){
+    console.log('Listening on port ' + port);
+});
+
 
